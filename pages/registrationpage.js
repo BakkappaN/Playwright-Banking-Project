@@ -13,7 +13,6 @@ exports.RegistrationPage = class RegistrationPage {
         this.page = page;
 
         // Elements
-        this.registerLink = page.getByRole('link', { name: 'Register' });
         this.firstName = page.locator('[id="customer\\.firstName"]');
         this.lastName = page.locator('[id="customer\\.lastName"]');
         this.firstName = page.locator('[id="customer\\.firstName"]');
@@ -31,13 +30,7 @@ exports.RegistrationPage = class RegistrationPage {
         this.registerButton = page.getByRole('button', { name: 'Register' })
     }
 
-    async goto() {
-        await this.page.setViewportSize({ width: 1366, height: 728 })
-        await this.page.goto(process.env.URL);
-    }
-
     async registerNewUser(fname, lname, address, city, state, zipcode, phone, ssn, username, pass) {
-        await this.registerLink.click();
         await this.firstName.fill(fname);
         await this.lastName.fill(lname);
         await this.addresss.fill(address);
