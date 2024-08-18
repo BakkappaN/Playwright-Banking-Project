@@ -1,4 +1,4 @@
-### Playwright Banking Project
+## Playwright Banking Project :
 
 
 ## Playwright Automation Framework included :
@@ -11,8 +11,8 @@
 7. REST API Automation
 
 
-#### Covered Test cases in this project :
-#### Test Case 1: 
+## Covered Test cases in this project :
+### Test Case 1: 
 Steps to Automate:
 1. Open this url https://parabank.parasoft.com/parabank/index.htm
 2. Click On Register Link.
