@@ -1,7 +1,7 @@
 ## Playwright Banking Project :
 
 
-## Playwright Automation Framework included :
+## Playwright Automation Framework Contains :
 1. Page Object Model
 2. Data Driven Testing Using JSON File
 3. JavaScript
