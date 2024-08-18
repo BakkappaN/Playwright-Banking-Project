@@ -1,0 +1,24 @@
+{
+  "name": "playwrightbaseautomationframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "npx playwright test --config=playwright.config.js --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^20.11.16"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.4.0",
+    "@azure/keyvault-secrets": "^4.8.0",
+    "csv-parse": "^5.5.3",
+    "dotenv": "^16.4.1",
+    "luxon": "^3.4.4"
+  }
+}
