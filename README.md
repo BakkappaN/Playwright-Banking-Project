@@ -38,6 +38,16 @@ Manual Steps:
 6. Click on Open New Account.
 7. Verify that field What type of Account would you like to open? is displayed.
 
+### Test Case 4: 
+Manual Steps:
+1. Open this url https://parabank.parasoft.com/parabank/index.htm
+2. Enter the InValid UserName.
+3. Enter the Valid Password.
+4. Click the Login button.
+5. Verify that appropriate error message is displayed
+
+
+
 
 
 
