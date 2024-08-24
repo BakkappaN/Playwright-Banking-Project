@@ -47,7 +47,11 @@ Manual Steps:
 5. Verify that appropriate error message is displayed
 
 
-
+## Learn Complete Playwright
+### Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
+### Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
+### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
+### Playwright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
 
 
 
