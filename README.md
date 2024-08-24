@@ -53,6 +53,10 @@ Manual Steps:
 ### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 ### Playwright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
 
+## Update playwrigh to latest verison
+  npm install -D @playwright/test@latest
+  npx playwright install --with-deps
+
 
 
 
