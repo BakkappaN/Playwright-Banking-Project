@@ -48,14 +48,14 @@ Manual Steps:
 
 
 ## Learn Complete Playwright
-### Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
-### Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
-### Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
-### Playwright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
+1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
+2. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
+3. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
+4. laywright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
 
 ## Update playwrigh to latest verison
-  ### npm install -D @playwright/test@latest
-  ### npx playwright install --with-deps
+1. npm install -D @playwright/test@latest
+2. npx playwright install --with-deps
 
 
 
