@@ -1,6 +1,10 @@
 // Include playwright module
 const { test, expect } = require('@playwright/test');
+
+import path from "node:path";
+const xlsx = require('xlsx');
 import BaseTest from '../utils/basetest';
+
 const { HomePage } = require('../pages/homepage');
 const { ResultPage } = require('../pages/resultpage');
 const { PlaylistPage } = require('../pages/playlistpage');
@@ -32,4 +36,24 @@ test('UI automation test using playwright', { tag: '@UITest' }, async ({ page })
         await playlistpage.clickOnVideo();
         await page.waitForTimeout(8000);
     });
+})
+
+/**
+ * Bakkappa N
+ */
+test('Verify excel data using playwright', { tag: '@ValidateExcel' }, async ({ page }) => {
+    const filePath = path.join(__dirname, process.env.DOWNLOAD_PATH);
+    const workbook = xlsx.readFile(filePath);
+    const worksheet = workbook.Sheets[process.env.Sheet1];
+    const data = xlsx.utils.sheet_to_json(worksheet);
+
+    expect(data.length).toBeGreaterThan(0);
+    for (const row of data) {
+        for (const key in row) {
+            console.log(`${key} : ` + row[key]);
+        }
+        console.log("=======")
+    }
+    expect(data[0].Skill1).toEqual('Playwright');
+    expect(data[0].Skill2).toEqual('Cypress');
 })

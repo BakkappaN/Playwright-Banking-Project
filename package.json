@@ -19,6 +19,7 @@
     "@azure/keyvault-secrets": "^4.8.0",
     "csv-parse": "^5.5.3",
     "dotenv": "^16.4.1",
-    "luxon": "^3.4.4"
+    "luxon": "^3.4.4",
+    "xlsx": "^0.18.5"
   }
 }

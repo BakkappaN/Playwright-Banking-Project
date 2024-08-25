@@ -4,7 +4,9 @@ const { test, expect } = require('@playwright/test');
 import { qaTestData } from "../test-data/qa/google.json";
 import { stageTestData } from "../test-data/stage/google.json";
 
-// create base class
+/**
+ * Bakkappa N
+ */
 class BaseTest {
     /**
      * 
