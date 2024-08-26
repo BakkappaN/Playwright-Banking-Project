@@ -24,7 +24,7 @@ test('UI automation test using playwright', { tag: '@UITest' }, async ({ page })
     });
 
     await test.step('Search with keywords', async () => {
-        await homepage.searchKeywords(baseTest.testData.skill1);
+        await homepage.searchKeywords(baseTest.testData.module1.skill1);
     });
 
     await test.step('Click on playlist', async () => {

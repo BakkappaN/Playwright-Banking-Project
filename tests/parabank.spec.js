@@ -9,23 +9,10 @@ const { OpenNewAccountPage } = require('../pages/opennewaccountpage');
 
 import { pbanktestdata } from "../test-data/qa/parabank.json";
 import { runtimetestdata } from '../test-data/runtimetestdata.json'
-import { qaTestData } from "../test-data/qa/google.json";
-import { stageTestData } from "../test-data/stage/google.json";
 import { faker } from "@faker-js/faker";
-
 import { updateJsonFile } from '../utils/helper';
 
 const filePath = path.join(__dirname, "../test-data/runtimetestdata.json");
-
-let testData = null;
-
-test.beforeAll('Running before all tests', () => {
-    if (process.env.ENV == 'qa') {
-        testData = qaTestData;
-    } else {
-        testData = stageTestData;
-    }
-})
 
 /**
  * Bakkappa N
@@ -78,7 +65,7 @@ test('Verify that user is able to login successfully in the ParaBank application
     });
 
     await test.step('Login into application', async () => {
-        await loginPage.loginToApplication();
+        await loginPage.loginToApplication(runtimetestdata.username, pbanktestdata.password);
     });
 
     await test.step('Verify that user is able to login successfully', async () => {
