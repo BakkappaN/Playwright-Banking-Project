@@ -14,6 +14,8 @@ module.exports = defineConfig({
     timeout: 2 * 60 * 1000
   },
   testDir: './tests',
+  //testDir: './tests-e2e',
+
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -23,11 +25,11 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   // Reporter
-  reporter:[
+  reporter: [
     ['html'],
-   // ['allure-playwright'],
+    // ['allure-playwright'],
     ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
-    ],
+  ],
 
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -38,9 +40,9 @@ module.exports = defineConfig({
     // },
 
     // video, screenshot, headless mode
-    video:'off',
+    video: 'off',
     screenshot: 'on',
-    headless : false,
+    headless: false,
 
     // custom attribute
     testIdAttribute: 'autocomplete',
@@ -48,6 +50,9 @@ module.exports = defineConfig({
     // Collect trace when retrying the failed test
     trace: 'on',
   },
+
+  globalSetup: require.resolve('./globals/global-setup'),
+  globalTeardown: require.resolve('./globals/global-teardown'),
 
   /* Configure projects for major browsers */
   projects: [
@@ -83,8 +88,9 @@ module.exports = defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome',
-     },
+      use: {
+        ...devices['Desktop Chrome'], channel: 'chrome',
+      },
     },
   ],
 
