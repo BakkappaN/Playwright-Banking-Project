@@ -9,9 +9,9 @@ require('dotenv').config();
  */
 module.exports = defineConfig({
   // test timeout
-  timeout: 5 * 60 * 1000,
+  timeout: 4 * 60 * 1000,
   expect: {
-    timeout: 2 * 60 * 1000
+    timeout: 90000
   },
   testDir: './tests',
   //testDir: './tests-e2e',
@@ -21,12 +21,12 @@ module.exports = defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   // Reporter
   reporter: [
-    ['html'],
+    ['html', { open: 'never' }],
     // ['allure-playwright'],
     ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
   ],

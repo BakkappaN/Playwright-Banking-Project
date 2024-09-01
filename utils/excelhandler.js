@@ -66,25 +66,28 @@ export async function readExcelFile(filePath, sheetName) {
 }
 
 export async function writeTestStatusToExcelFile(testInfo) {
-    const matches = testInfo.title.match(/\[(.*?)\]/);
 
-    if (matches) {
-        const numbersPart = matches[1];
-        const numbersArray = numbersPart.split(',').map(num => parseInt(num.trim(), 10));
-
-        numbersArray.forEach(number => {
-            const workbook = xlsx.readFile(process.env.TC_STATUS_PATH);
-            const worksheet = workbook.Sheets[process.env.TC_STATUS_SHEET];
-            const newRowData = [number, testInfo.status, ''];
-            const data = xlsx.utils.sheet_to_json(worksheet, { header: 1 });
-            data.push(newRowData);
-            const updatedWorksheet = xlsx.utils.aoa_to_sheet(data);
-            workbook.Sheets[process.env.TC_STATUS_SHEET] = updatedWorksheet;
-            xlsx.writeFile(workbook, process.env.TC_STATUS_PATH);
-            console.log(`1 Row of data added successfully to ${process.env.TC_STATUS_PATH}`);
-        });
-    } else {
-        console.log('No test case id found in title...');
+    if (process.env.UPDATE_TEST_PLAN == 'Yes' && process.env.PIPELINE == 'Yes') {
+        const matches = testInfo.title.match(/\[(.*?)\]/);
+    
+        if (matches) {
+            const numbersPart = matches[1];
+            const numbersArray = numbersPart.split(',').map(num => parseInt(num.trim(), 10));
+    
+            numbersArray.forEach(number => {
+                const workbook = xlsx.readFile(process.env.TC_STATUS_PATH);
+                const worksheet = workbook.Sheets[process.env.TC_STATUS_SHEET];
+                const newRowData = [number, testInfo.status, ''];
+                const data = xlsx.utils.sheet_to_json(worksheet, { header: 1 });
+                data.push(newRowData);
+                const updatedWorksheet = xlsx.utils.aoa_to_sheet(data);
+                workbook.Sheets[process.env.TC_STATUS_SHEET] = updatedWorksheet;
+                xlsx.writeFile(workbook, process.env.TC_STATUS_PATH);
+                console.log(`1 Row of data added successfully to ${process.env.TC_STATUS_PATH}`);
+            });
+        } else {
+            console.log('No test case id found in title...');
+        }
     }
 }
 

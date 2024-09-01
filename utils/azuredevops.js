@@ -1,8 +1,4 @@
 const { request, expect } = require('@playwright/test');
-
-const fs = require('fs');
-const XLSX = require('xlsx');
-
 import { readExcelFile } from '../utils/excelhandler';
 
 
@@ -50,6 +46,7 @@ class AzureDevOps {
                 console.log('row is : ' + row);
                 console.log(`Test Case ID - ${testCaseId} is : ${testCaseStatus}`);
             }
+            console.log(`Completed updating test case status for : ${data.length}`);
         } catch (error) {
             console.error('Error in updating test case status:', error);
             throw error; // Rethrow to indicate failure
@@ -90,8 +87,5 @@ class AzureDevOps {
     }
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 export default AzureDevOps;

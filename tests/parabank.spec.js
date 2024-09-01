@@ -14,10 +14,16 @@ import { updateJsonFile } from '../utils/helper';
 
 const filePath = path.join(__dirname, "../test-data/runtimetestdata.json");
 
+import { writeTestStatusToExcelFile } from '../utils/excelhandler';
+
+test.afterEach('Running after each test...', async ({ page }, testInfo) => {
+    await writeTestStatusToExcelFile(testInfo);
+});
+
 /**
  * Bakkappa N
  */
-test('Automate User Registration process', { tag: '@ParaBankTest' }, async ({ page }) => {
+test('[2] Automate User Registration process', { tag: '@ParaBankTest' }, async ({ page }) => {
 
     const registrationPage = new RegistrationPage(page);
     const loginPage = new LoginPage(page);
@@ -56,7 +62,7 @@ test('Automate User Registration process', { tag: '@ParaBankTest' }, async ({ pa
 /**
  * Bakkappa N
  */
-test('Verify that user is able to login successfully in the ParaBank application after providing the valid username and password', { tag: '@ParaBankTest' }, async ({ page }) => {
+test('[9] Verify that user is able to login successfully in the ParaBank application after providing the valid username and password', { tag: '@ParaBankTest' }, async ({ page }) => {
 
     const loginPage = new LoginPage(page);
 
@@ -76,7 +82,7 @@ test('Verify that user is able to login successfully in the ParaBank application
 /**
  * Bakkappa N
  */
-test('Verify that user can see the Account types in dropdown', { tag: '@ParaBankTest' }, async ({ page }) => {
+test('[12]Verify that user can see the Account types in dropdown', { tag: '@ParaBankTest' }, async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     const paraBankHomePage = new ParaBankHomePage(page);
@@ -104,7 +110,7 @@ test('Verify that user can see the Account types in dropdown', { tag: '@ParaBank
 /**
  * Bakkappa N
  */
-test('Verify that user is not able to login into application when user entered invalid userid', { tag: '@ParaBankTest' }, async ({ page }) => {
+test('[14] Verify that user is not able to login into application when user entered invalid userid', { tag: '@ParaBankTest' }, async ({ page }) => {
 
     const loginPage = new LoginPage(page);
 

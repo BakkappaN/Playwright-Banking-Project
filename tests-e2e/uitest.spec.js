@@ -9,10 +9,16 @@ const { HomePage } = require('../pages/homepage');
 const { ResultPage } = require('../pages/resultpage');
 const { PlaylistPage } = require('../pages/playlistpage');
 
+import { writeTestStatusToExcelFile } from '../utils/excelhandler';
+
+test.afterEach('Running after each test...', async ({ page }, testInfo) => {
+    await writeTestStatusToExcelFile(testInfo);
+});
+
 /**
  * Bakkappa N
  */
-test('UI automation test using playwright', { tag: '@UITest' }, async ({ page }) => {
+test('[2] UI automation test using playwright', { tag: '@UITest' }, async ({ page }) => {
 
     const baseTest = new BaseTest(page);
     const homepage = new HomePage(page);
@@ -41,7 +47,7 @@ test('UI automation test using playwright', { tag: '@UITest' }, async ({ page })
 /**
  * Bakkappa N
  */
-test('Verify excel data using playwright', { tag: '@ValidateExcel' }, async ({ page }) => {
+test('[9, 12, 14] Verify excel data using playwright', { tag: '@ValidateExcel' }, async ({ page }) => {
     const filePath = path.join(__dirname, process.env.DOWNLOAD_PATH);
     const workbook = xlsx.readFile(filePath);
     const worksheet = workbook.Sheets[process.env.Sheet1];
