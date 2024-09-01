@@ -2,13 +2,14 @@
 
 
 ## Playwright Automation Framework Contains :
-1. Page Object Model
-2. Data Driven Testing Using JSON File
-3. JavaScript
-4. Test Report
-5. Assertions or Validations
-6. UI Automation Testing
-7. REST API Automation
+1. Integrated with Azure DevOps Test Plan - Updating Test Case Staus
+2. Page Object Model
+3. Data Driven Testing Using JSON File
+4. JavaScript
+5. Test Report
+6. Assertions or Validations
+7. UI Automation Testing
+8. REST API Automation
 
 
 ## Covered Test cases in this project :
