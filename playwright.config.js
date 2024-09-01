@@ -13,8 +13,8 @@ module.exports = defineConfig({
   expect: {
     timeout: 90000
   },
-  testDir: './tests',
-  //testDir: './tests-e2e',
+  //testDir: './tests',
+  testDir: './tests-e2e',
 
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -28,7 +28,7 @@ module.exports = defineConfig({
   reporter: [
     ['html', { open: 'never' }],
     // ['allure-playwright'],
-    ['junit', { outputFile: 'test-results/e2e-junit-results.xml' }],
+    ['junit', { outputFile: './e2e-junit-results.xml' }],
   ],
 
   use: {
