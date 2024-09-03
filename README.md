@@ -49,7 +49,7 @@ Manual Steps:
 5. Verify that appropriate error message is displayed
 
 
-## Learn Complete Playwright
+## Learn Complete Playwright - Youtube Playlist
 1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
 2. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
 3. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
