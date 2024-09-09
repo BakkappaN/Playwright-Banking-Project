@@ -3,14 +3,15 @@
 
 ## Playwright Automation Framework Contains :
 1. Integrating Playwright with Azure DevOps Test Plan - Updating Test Case Staus
-2. Page Object Model Design Pattern
-3. Data Driven Testing
-5. Test Report
-6. Assertions or Validations
-7. UI Automation Testing
-8. REST API Automation
-9. Run test based on Environments - QA, Staging, PROD
-10. JavaScript
+2. DataBase Testing
+3. Page Object Model Design Pattern
+4. Data Driven Testing
+5. REST API Automation
+6. Test Report
+7. Assertions or Validations
+8. UI Automation Testing
+10. Run test based on Environments - QA, Staging, PROD
+11. JavaScript
 
 
 ## Covered Test cases in this project :
