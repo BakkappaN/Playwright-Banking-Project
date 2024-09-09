@@ -1,4 +1,5 @@
 const fs = require('fs');
+const TOTP = require('otplib');
 
 export async function updateJsonFile(filePath, keyToUpdate, newValue) {
   fs.readFile(filePath, 'utf8', (err, data) => {
@@ -24,4 +25,14 @@ export async function updateJsonFile(filePath, keyToUpdate, newValue) {
       }
     });
   });
+}
+
+export async function getMFAToken() {
+  const secret = process.env.AUTHENTICATOR_SECRET;
+  TOTP.authenticator.options = {
+      step: 30, //default is 30 seconds
+      window: 1 // acceptable time window
+  }
+  const otp = TOTP.authenticator.generate(secret);
+  return otp;
 }
