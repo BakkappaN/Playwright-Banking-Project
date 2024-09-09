@@ -9,7 +9,7 @@ require('dotenv').config();
  */
 module.exports = defineConfig({
   // test timeout
-  timeout: 4 * 60 * 1000,
+  timeout: 3 * 60 * 1000,
   expect: {
     timeout: 90000
   },
@@ -49,6 +49,8 @@ module.exports = defineConfig({
 
     // Collect trace when retrying the failed test
     trace: 'on',
+    actionTimeout: 90 * 1000,
+    navigationTimeout: 90 * 1000,
   },
 
   globalSetup: require.resolve('./globals/global-setup'),
