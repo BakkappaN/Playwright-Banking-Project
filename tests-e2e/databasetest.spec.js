@@ -19,7 +19,7 @@ test.afterAll('Running after all tests', async () => {
 /**
  * Bakkappa N
  */
-test('Data Base Validation Test 1', { tag: '@DataBaseTest' }, async ({ }) => {
+test('Data Base Validation Test 1', { tag: '@SQLDataBaseTest' }, async ({ }) => {
     await test.step('Validate name from data base', async () => {
 
         // Playwright actions
@@ -41,7 +41,7 @@ test('Data Base Validation Test 1', { tag: '@DataBaseTest' }, async ({ }) => {
 /**
  * Bakkappa N
  */
-test('Data Base Validation Test 2', { tag: '@DataBaseTest' }, async ({ }) => {
+test('Data Base Validation Test 2', { tag: '@SQLDataBaseTest' }, async ({ }) => {
     await test.step('Validate email from data base', async () => {
 
         // Playwright actions

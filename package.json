@@ -4,7 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests": "npx playwright test --config=playwright.config.js --project=chromium"
+    "tests": "npx playwright test",
+    "ParaBank:Tests":"npx playwright test --grep ParaBankTest",
+    "SQLDB:Tests":"npx playwright test --grep SQLDataBaseTest",
+    "MongoDB:Tests":"npx playwright test --grep MongoDBTest",
+    "UI:Tests":"npx playwright test --grep UITest",
+    "API:Tests":"npx playwright test --grep APITest",
+    "Mobile:Tests":"npx playwright test --grep MobileTest"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +26,7 @@
     "csv-parse": "^5.5.3",
     "dotenv": "^16.4.1",
     "luxon": "^3.4.4",
+    "mongodb": "^6.8.1",
     "mysql2": "^3.11.0",
     "otplib": "^12.0.1",
     "xlsx": "^0.18.5"
