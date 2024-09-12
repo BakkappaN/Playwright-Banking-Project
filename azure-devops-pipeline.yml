@@ -13,7 +13,7 @@ steps:
     displayName: "npm ci"
   - script: npx playwright install --with-deps
     displayName: "Install Playwright browsers"
-  - script: npm run MongoDB:Tests
+  - script: npm run API:Tests
     displayName: "Run Playwright tests"
     env:
       CI: "true"
