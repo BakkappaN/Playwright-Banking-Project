@@ -57,6 +57,7 @@ Manual Steps:
 4. Click the Login button.
 5. Verify that appropriate error message is displayed
 
+
 ## Learn Complete Playwright - Youtube Playlist
 
 1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
@@ -64,6 +65,15 @@ Manual Steps:
 3. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 4. laywright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
 
+
+## Important articles Links
+* Update test case status automatically - https://medium.com/@testerstalk/integrate-azure-devops-test-plan-with-playwright-update-test-case-status-845b127f4b2b
+* Handling MFA(Multi Factor Authentication) in Playwright - https://medium.com/@testerstalk/how-to-automate-mfa-multi-factor-authentication-seamlessly-with-playwright-433f89be44a1
+* Data Base Testing(MYSQL) with Playwright - https://medium.com/@testerstalk/boost-your-playwright-tests-with-real-time-database-integration-39351ec710a0
+* Data Base Testing(MongoDB) with Playwright - https://medium.com/@testerstalk/integrating-mongodb-with-playwright-test-automation-data-base-testing-22e4bcee7595
+* Top 50 Playwright interview questions & answers - https://medium.com/@testerstalk/top-50-playwright-interview-questions-and-answers-6dff075c488e
+
+  
 ## Update playwrigh to latest verison
 
 1. npm install -D @playwright/test@latest
