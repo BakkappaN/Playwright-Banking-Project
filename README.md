@@ -90,3 +90,8 @@ Manual Steps:
 
 1. npm install -D @playwright/test@latest
 2. npx playwright install --with-deps
+
+## Important Commnands for daily use
+https://medium.com/@testerstalk/playwright-important-commands-for-daily-use-727a339b288e
+
+
