@@ -65,7 +65,7 @@ Manual Steps:
 
    
 2. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
-   [![Watch this video on YouTube](https://img.youtube.com/vi/lM-lqPun9P8&t/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8&t)
+   [![Watch this video on YouTube](https://img.youtube.com/vi/lM-lqPun9P8/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8)
    
 3. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
    [![Watch this video on YouTube](https://img.youtube.com/vi/WwovRRp0f4o/hqdefault.jpg)](https://www.youtube.com/watch?v=WwovRRp0f4o)
