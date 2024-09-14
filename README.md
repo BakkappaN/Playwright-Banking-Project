@@ -61,17 +61,17 @@ Manual Steps:
 ## Learn Complete Playwright - Youtube Playlist
 
 1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
-   
-[![Watch this video on YouTube](https://img.youtube.com/vi/2poXBtifpzA/hqdefault.jpg)](https://www.youtube.com/watch?v=2poXBtifpzA)
+   [![Watch this video on YouTube](https://img.youtube.com/vi/2poXBtifpzA/hqdefault.jpg)](https://www.youtube.com/watch?v=2poXBtifpzA)
 
    
-3. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
-
-
-[![Watch this video on YouTube](https://img.youtube.com/vi/PLUeDIlio4THF3rnYZ63qkbHwMTXiG67vz/hqdefault.jpg)](https://www.youtube.com/watch?v=PLUeDIlio4THF3rnYZ63qkbHwMTXiG67vz)
+2. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
+   [![Watch this video on YouTube](https://img.youtube.com/vi/lM-lqPun9P8&t/hqdefault.jpg)](https://www.youtube.com/watch?v=lM-lqPun9P8&t)
    
-5. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
-6. laywright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
+3. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
+   [![Watch this video on YouTube](https://img.youtube.com/vi/WwovRRp0f4o/hqdefault.jpg)](https://www.youtube.com/watch?v=WwovRRp0f4o)
+   
+4. Playwright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
+   [![Watch this video on YouTube](https://img.youtube.com/vi/Exx2M5Pz06g/hqdefault.jpg)](https://www.youtube.com/watch?v=Exx2M5Pz06g)
 
 
 ## Important articles Links
