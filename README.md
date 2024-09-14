@@ -62,7 +62,7 @@ Manual Steps:
 
 1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
    
-   <a href="[https://www.youtube.com/watch?v=9t6omL3mq_bb60nx](https://youtu.be/2poXBtifpzA?si=9t6omL3mq_bb60nx)" target="_blank">
+   <a href="https://www.youtube.com/watch?v=9t6omL3mq_bb60nx" target="_blank">
     <img src="https://img.youtube.com/vi/9t6omL3mq_bb60nx/hqdefault.jpg" alt="Watch this video on YouTube" />
    </a>
    
