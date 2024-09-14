@@ -68,9 +68,13 @@ Manual Steps:
 
 ## Important articles Links
 * Update test case status automatically - https://medium.com/@testerstalk/integrate-azure-devops-test-plan-with-playwright-update-test-case-status-845b127f4b2b
+  
 * Handling MFA(Multi Factor Authentication) in Playwright - https://medium.com/@testerstalk/how-to-automate-mfa-multi-factor-authentication-seamlessly-with-playwright-433f89be44a1
+  
 * Data Base Testing(MYSQL) with Playwright - https://medium.com/@testerstalk/boost-your-playwright-tests-with-real-time-database-integration-39351ec710a0
+  
 * Data Base Testing(MongoDB) with Playwright - https://medium.com/@testerstalk/integrating-mongodb-with-playwright-test-automation-data-base-testing-22e4bcee7595
+  
 * Top 50 Playwright interview questions & answers - https://medium.com/@testerstalk/top-50-playwright-interview-questions-and-answers-6dff075c488e
 
   
