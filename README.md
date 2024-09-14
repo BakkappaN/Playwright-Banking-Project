@@ -61,9 +61,11 @@ Manual Steps:
 ## Learn Complete Playwright - Youtube Playlist
 
 1. Playwright Tutorial Full Course - https://bit.ly/playwright-tutorial-automation-testing
-   <a href="https://www.youtube.com/watch?v=9t6omL3mq_bb60nx" target="_blank">
+   
+   <a href="[https://www.youtube.com/watch?v=9t6omL3mq_bb60nx](https://youtu.be/2poXBtifpzA?si=9t6omL3mq_bb60nx)" target="_blank">
     <img src="https://img.youtube.com/vi/9t6omL3mq_bb60nx/hqdefault.jpg" alt="Watch this video on YouTube" />
    </a>
+   
 3. Playwright API Testing Tutorial - https://bit.ly/playwright-api-testing-tutorial
 4. Playwright with Dynamics 365 CRM - https://youtu.be/WwovRRp0f4o?si=oqPE2ux7UcDeJMm6
 5. laywright with Azure DevOps Pipeline - https://bit.ly/playwright-azure-devops-tutorial
