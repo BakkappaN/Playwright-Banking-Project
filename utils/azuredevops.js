@@ -44,7 +44,7 @@ class AzureDevOps {
                 const testPointId = await this.getTestPoint(testPlanId, testSuiteId, testCaseId);
                 await this.updateTestPointStatus(testPlanId, testSuiteId, testPointId, testCaseStatus.charAt(0).toUpperCase() + testCaseStatus.slice(1));
                 console.log('row is : ' + row);
-                console.log(`Test Case ID - ${testCaseId} is : ${testCaseStatus}`);
+                console.log(`Updated Test Case ID - ${testCaseId} : ${testCaseStatus} in test plan`);
             }
             console.log(`Completed updating test case status for : ${data.length}`);
         } catch (error) {

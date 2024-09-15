@@ -1,11 +1,7 @@
 // Include playwright module
-const { test, expect } = require('@playwright/test');
-import path from "node:path";
+const { test, expect } = require('../fixtures/testfixture');
 
-const { RegistrationPage } = require('../pages/registrationpage');
-const { LoginPage } = require('../pages/loginpage');
-const { ParaBankHomePage } = require('../pages/parabankhomepage');
-const { OpenNewAccountPage } = require('../pages/opennewaccountpage');
+import path from "node:path";
 
 import { pbanktestdata } from "../test-data/qa/parabank.json";
 import { runtimetestdata } from '../test-data/runtimetestdata.json'
@@ -14,19 +10,10 @@ import { updateJsonFile } from '../utils/helper';
 
 const filePath = path.join(__dirname, "../test-data/runtimetestdata.json");
 
-import { writeTestStatusToExcelFile } from '../utils/excelhandler';
-
-test.afterEach('Running after each test...', async ({ page }, testInfo) => {
-    await writeTestStatusToExcelFile(testInfo);
-});
-
 /**
  * Bakkappa N
  */
-test('[2] Automate User Registration process', { tag: '@ParaBankTest' }, async ({ page }) => {
-
-    const registrationPage = new RegistrationPage(page);
-    const loginPage = new LoginPage(page);
+test('[2] Automate User Registration process', { tag: '@ParaBankTest' }, async ({page, registrationPage, loginPage  }) => {
 
     const newUserName = pbanktestdata.firstname + "_" + pbanktestdata.lastname + "_" + faker.number.int(10000);
 
@@ -62,9 +49,7 @@ test('[2] Automate User Registration process', { tag: '@ParaBankTest' }, async (
 /**
  * Bakkappa N
  */
-test('[9] Verify that user is able to login successfully in the ParaBank application after providing the valid username and password', { tag: '@ParaBankTest' }, async ({ page }) => {
-
-    const loginPage = new LoginPage(page);
+test('[9] Verify that user is able to login successfully in the ParaBank application after providing the valid username and password', { tag: '@ParaBankTest' }, async ({ page, loginPage }) => {
 
     await test.step('Open browser with Para Bank URL', async () => {
         await loginPage.goto();
@@ -82,11 +67,7 @@ test('[9] Verify that user is able to login successfully in the ParaBank applica
 /**
  * Bakkappa N
  */
-test('[12]Verify that user can see the Account types in dropdown', { tag: '@ParaBankTest' }, async ({ page }) => {
-
-    const loginPage = new LoginPage(page);
-    const paraBankHomePage = new ParaBankHomePage(page);
-    const openNewAccountPage = new OpenNewAccountPage(page);
+test('[12]Verify that user can see the Account types in dropdown', { tag: '@ParaBankTest' }, async ({ page, loginPage, paraBankHomePage, openNewAccountPage }) => {
 
     await test.step('Open browser with Para Bank URL', async () => {
         await loginPage.goto();
@@ -110,9 +91,7 @@ test('[12]Verify that user can see the Account types in dropdown', { tag: '@Para
 /**
  * Bakkappa N
  */
-test('[14] Verify that user is not able to login into application when user entered invalid userid', { tag: '@ParaBankTest' }, async ({ page }) => {
-
-    const loginPage = new LoginPage(page);
+test('[14] Verify that user is not able to login into application when user entered invalid userid', { tag: '@ParaBankTest' }, async ({ page, loginPage}) => {
 
     await test.step('Open browser with Para Bank URL', async () => {
         await loginPage.goto();

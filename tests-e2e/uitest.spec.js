@@ -1,5 +1,5 @@
-// Include playwright module
-const { test, expect } = require('@playwright/test');
+const { test} = require('../fixtures/testfixture');
+const { expect } = require('@playwright/test');
 
 import path from "node:path";
 const xlsx = require('xlsx');
@@ -8,12 +8,6 @@ import BaseTest from '../utils/basetest';
 const { HomePage } = require('../pages/homepage');
 const { ResultPage } = require('../pages/resultpage');
 const { PlaylistPage } = require('../pages/playlistpage');
-
-import { writeTestStatusToExcelFile } from '../utils/excelhandler';
-
-test.afterEach('Running after each test...', async ({ page }, testInfo) => {
-    await writeTestStatusToExcelFile(testInfo);
-});
 
 /**
  * Bakkappa N
