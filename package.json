@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "tests": "npx playwright test",
-    "ParaBank:Tests":"npx playwright test --grep ParaBankTest",
-    "SQLDB:Tests":"npx playwright test --grep SQLDataBaseTest",
-    "MongoDB:Tests":"npx playwright test --grep MongoDBTest",
-    "UI:Tests":"npx playwright test --grep UITest",
-    "API:Tests":"npx playwright test --grep APITest",
-    "Mobile:Tests":"npx playwright test --grep MobileTest"
+    "ParaBank:Tests": "npx playwright test --grep ParaBankTest",
+    "SQLDB:Tests": "npx playwright test --grep SQLDataBaseTest",
+    "MongoDB:Tests": "npx playwright test --grep MongoDBTest",
+    "UI:Tests": "npx playwright test --grep UITest",
+    "API:Tests": "npx playwright test --grep APITest",
+    "Mobile:Tests": "npx playwright test --grep MobileTest"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +24,7 @@
     "@azure/identity": "^4.4.0",
     "@azure/keyvault-secrets": "^4.8.0",
     "csv-parse": "^5.5.3",
-    "dotenv": "^16.4.1",
+    "dotenv": "^16.4.7",
     "luxon": "^3.4.4",
     "mongodb": "^6.8.1",
     "mysql2": "^3.11.0",
